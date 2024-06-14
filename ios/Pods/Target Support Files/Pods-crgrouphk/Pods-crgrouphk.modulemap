@@ -1,0 +1,6 @@
+module Pods_crgrouphk {
+  umbrella header "Pods-crgrouphk-umbrella.h"
+
+  export *
+  module * { export * }
+}

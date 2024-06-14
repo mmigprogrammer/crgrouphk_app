@@ -1,0 +1,79 @@
+{
+    "__Config": "設定",
+    "language": "言語",
+    "label": "ja-jp",
+    "languageTag": "日本-日文",
+    "isRTL": false,
+    "login": "ログイン",
+    "logout":"Logout",
+    "search":"検索",
+    "signup": "サインアップ",
+    "keep_shop": "買い物を続ける",
+    "start_shop":"ショッピングを開始",
+    "nothing_in_cart": "カートは空です",
+    "nothing_in_fav": "お気に入りリストが空です",
+
+    "fav_need_register":"製品を保存するにはログインする必要があります",
+    "shop_need_register":"製品を購入するにはログインする必要があります",
+
+    
+    "item":"個数",
+
+    "search_name": "名前",
+    "search_place": "場所",
+    "search_desc": "はじめに",
+    "search_save": "保存",
+    "search_buy_qty": "購入数",
+    "search_want_buy_qty": "購入したい数量を入力してください",
+    "search_add_cart": "カートに追加",
+    "search_product_information": "商品情報",
+    "search_tandc": "利用規約",
+    "search_you_might_also_like": "YOU MIGHT ALSO LIKE",
+    
+    
+    "search_list_sort":"SORT",
+    "search_list_sort_price":"Price",
+
+    "search_list_filter":"FILTER",
+    "search_list_filter_place":"place",
+
+    "shop_add_to_bag": "バッグに追加",
+    "shop_go_to_bag": "バッグに行く",
+    
+    "shop_total": "合計",
+    "shop_total_price": "合計価格",
+    "shop_checkout": "チェックアウト",
+    "shop_use_coupon": "クーポンを使用",
+    "shop_unit": "ユニット",
+
+    "setting_area": "エリア",
+    "setting_currency": "通貨",
+    "setting_language": "言語",
+    "setting_notifications": "通知",
+    "setting_tandc": "利用規約",
+    "setting_pp": "プライバシーポリシー",
+
+    "my_account": "マイアカウント",
+    "my_order": "私の注文",
+    "my_coupon": "マイクーポン",
+    "client_services":"クライアントサービス",
+
+    "login_welcome": "ようこそ",
+    "login_logintoenjoy": "ログインしてエクスプレスチェックアウトを楽しんだり,注文状況を追跡したりできます",
+    "login_or": "または",
+    "login_email": "メールアドレス",
+    "login_password": "パスワード",
+    "login_forget_password": "パスワードを忘れた",
+    "login_whencreateagree": "アカウントを作成するかログインすることにより,私たちに同意したことになります",
+    "login_and": "and",
+    "login_tandc": "利用規約",
+    "login_pp": "プライバシーポリシー",
+    "login_noaccount": "アカウントはまだありません",
+    "login_registernow": "今すぐ登録",
+
+    "facebook_login":"Facebook ログイン",
+    "apple_login":"Apple ログイン",
+    "google_login":"Google ログイン",
+
+    "":""
+}

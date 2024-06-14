@@ -1,0 +1,1 @@
+import { getStore } from '../redux/store/configureStore';

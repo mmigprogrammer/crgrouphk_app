@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "8383303587",
+    "project_id": "crgrouphk-4f1e4",
+    "storage_bucket": "crgrouphk-4f1e4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:8383303587:android:2177bf213aef5d90615416",
+        "android_client_info": {
+          "package_name": "com.migh.crgrouphk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "8383303587-7kiq0qigp63hj84emtg4h4uju0hvic22.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-vOYTdm4OYYTsAHyx_FTDz-DHs5wA4dg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "8383303587-7kiq0qigp63hj84emtg4h4uju0hvic22.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "8383303587-1n5ehquubbjvtf85at54rvvh4d596s4d.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.migh.crgrouphk"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

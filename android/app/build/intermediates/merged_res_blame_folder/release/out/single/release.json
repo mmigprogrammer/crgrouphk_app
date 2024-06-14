@@ -1,0 +1,178 @@
+[
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/drawable-mdpi_src_img_alarm.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/generated/res/react/release/drawable-mdpi/src_img_alarm.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/drawable-mdpi_node_modules_reactnativedropdownpicker_src_themes_light_icons_arrowdown.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/generated/res/react/release/drawable-mdpi/node_modules_reactnativedropdownpicker_src_themes_light_icons_arrowdown.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/drawable-mdpi_node_modules_reactnavigation_elements_src_assets_backiconmask.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/generated/res/react/release/drawable-mdpi/node_modules_reactnavigation_elements_src_assets_backiconmask.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/drawable-mdpi_node_modules_reactnativedropdownpicker_src_themes_dark_icons_close.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/generated/res/react/release/drawable-mdpi/node_modules_reactnativedropdownpicker_src_themes_dark_icons_close.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/drawable-xxxhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/generated/res/react/release/drawable-xxxhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/drawable-mdpi_src_img_unconfirmed.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/generated/res/react/release/drawable-mdpi/src_img_unconfirmed.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/drawable-mdpi_node_modules_reactnativedropdownpicker_src_themes_dark_icons_tick.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/generated/res/react/release/drawable-mdpi/node_modules_reactnativedropdownpicker_src_themes_dark_icons_tick.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/drawable-mdpi_src_img_time.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/generated/res/react/release/drawable-mdpi/src_img_time.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/drawable-mdpi_src_img_language.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/generated/res/react/release/drawable-mdpi/src_img_language.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/drawable-mdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/generated/res/react/release/drawable-mdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/drawable-mdpi_src_img_ticket.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/generated/res/react/release/drawable-mdpi/src_img_ticket.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/drawable-mdpi_src_img_finished.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/generated/res/react/release/drawable-mdpi/src_img_finished.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/drawable-xhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/generated/res/react/release/drawable-xhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/drawable-mdpi_node_modules_reactnativedropdownpicker_src_themes_dark_icons_arrowup.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/generated/res/react/release/drawable-mdpi/node_modules_reactnativedropdownpicker_src_themes_dark_icons_arrowup.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/drawable-hdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/generated/res/react/release/drawable-hdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/drawable-mdpi_src_img_stylisticon.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/generated/res/react/release/drawable-mdpi/src_img_stylisticon.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/drawable-mdpi_node_modules_reactnativedropdownpicker_src_themes_dark_icons_arrowdown.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/generated/res/react/release/drawable-mdpi/node_modules_reactnativedropdownpicker_src_themes_dark_icons_arrowdown.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/drawable-mdpi_src_img_ticket_gray.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/generated/res/react/release/drawable-mdpi/src_img_ticket_gray.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/drawable-mdpi_node_modules_reactnativedropdownpicker_src_themes_light_icons_tick.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/generated/res/react/release/drawable-mdpi/node_modules_reactnativedropdownpicker_src_themes_light_icons_tick.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/drawable-mdpi_node_modules_reactnativedropdownpicker_src_themes_light_icons_arrowup.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/generated/res/react/release/drawable-mdpi/node_modules_reactnativedropdownpicker_src_themes_light_icons_arrowup.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/drawable-mdpi_src_img_cancelled.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/generated/res/react/release/drawable-mdpi/src_img_cancelled.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/drawable-xxhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/generated/res/react/release/drawable-xxhdpi/node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/drawable-mdpi_src_img_confirmed.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/generated/res/react/release/drawable-mdpi/src_img_confirmed.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/drawable-mdpi_node_modules_reactnativedropdownpicker_src_themes_light_icons_close.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/generated/res/react/release/drawable-mdpi/node_modules_reactnativedropdownpicker_src_themes_light_icons_close.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/drawable-mdpi_src_img_privacy.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/generated/res/react/release/drawable-mdpi/src_img_privacy.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/drawable-mdpi_src_img_selected.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/generated/res/react/release/drawable-mdpi/src_img_selected.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/drawable-mdpi_src_img_userimg.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/generated/res/react/release/drawable-mdpi/src_img_userimg.png"
+    },
+    {
+        "merged": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/build/intermediates/res/merged/release/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/mmig/Desktop/Andy/crgrouphk/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+    }
+]

@@ -1,0 +1,14 @@
+com/mml_rn/MainActivity.java
+ com.migh.crgrouphk.MainActivity
+com/mml_rn/ReactNativeFlipper.java
+ com.migh.crgrouphk.ReactNativeFlipper
+ com.migh.crgrouphk.ReactNativeFlipper$1
+ com.migh.crgrouphk.ReactNativeFlipper$2
+ com.migh.crgrouphk.ReactNativeFlipper$2$1
+com/mml_rn/MainApplication.java
+ com.migh.crgrouphk.MainApplication
+ com.migh.crgrouphk.MainApplication$1
+com/migh/crgrouphk/BuildConfig.java
+ com.migh.crgrouphk.BuildConfig
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
