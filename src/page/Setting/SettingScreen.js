@@ -306,14 +306,19 @@ const Setting = ({navigation}) => {
             <Text style={{textAlign: 'center', fontSize: 16, color: '#6A6A6A'}}>
               <Text
                 style={{color: '#6A6A6A'}}
-                onPress={() => OpenURL(uri + 'index.php/Home/index/tandc')}>
+                onPress={() => {
+                  navigation.pop()
+                  navigation.push("TermsAndCondition")
+                }}>
                 {i18n.t('setting_tandc')}
               </Text>
               &nbsp;--&nbsp;
               <Text
                 style={{color: '#6A6A6A'}}
                 onPress={() => {
-                  OpenURL(uri + 'index.php/Home/index/privacy_policy');
+                  // OpenURL(uri + 'index.php/Home/index/privacy_policy');
+                  navigation.pop()
+                  navigation.push("PrivacyPolicy")
                 }}>
                 {i18n.t('setting_pp')}
               </Text>

@@ -313,6 +313,7 @@ const GoodsDetailScreen = ({route, navigation}) => {
                         borderRadius: 8,
                         width: 200,
                         height: 30,
+                        padding:0
                       }}
                       onChangeText={text => {
                         if (text.match(/[^0-9]/g)) {

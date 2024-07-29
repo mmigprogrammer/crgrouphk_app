@@ -237,9 +237,8 @@ const BookingScreen = ({route, navigation}) => {
     //   uid: userId,
     //   booking_time: dateTime.format('YYYY-MM-DD HH:mm:ss'),
     // });
-    console.log(bookingList);
-    let goodIds = [];
-    bookingList.map(item => {
+    console.log("bookinglist : ",bookingList);
+    let goodIds = [];  bookingList.map(item => {
       goodIds.push(item.bookingGood.id);
     });
     console.log(goodIds.join(','));
@@ -256,7 +255,7 @@ const BookingScreen = ({route, navigation}) => {
         MemberId: userMemberId ? userMemberId : 0,
       })
       .then(data1 => {
-        console.log(data1);
+        console.log("colort group called");
         setCgBookId(data1.data.data.AppointmentId);
         axios
           .get('booking/bookingSchedule', {
@@ -277,16 +276,17 @@ const BookingScreen = ({route, navigation}) => {
               amount: amountTotal,
               MemberId: userMemberId ? userMemberId : 0,
             },
-          })
-          .then(data => {
-            console.log(data);
+          }).then(data => {
+            //alert('success2');
+            //console.log(data);
             setBookId(data.data.data);
             //if submit booking,fetchapi again
+            //navigation.push('Order');
             return function cleanup() {
               fetchMyAPI();
             };
           });
-      });
+      })
   };
 
   //setBookId() is not updating the state immediately. This is because setState is asynchronous, and it may take some time to update the state.
@@ -421,6 +421,7 @@ const BookingScreen = ({route, navigation}) => {
           color: 'gray',
           fontSize: 15,
         }}
+        listMode='MODAL'
         dropDownDirection="TOP"
         dropDownContainerStyle={{
           //backgroundColor: 'rgba(0,0,0,0)',
@@ -706,7 +707,6 @@ const BookingScreen = ({route, navigation}) => {
               value: timeslot,
             });
           });
-          console.log(temp1);
           setAvBookingTimeSlot(temp1);
         }
       })
@@ -733,6 +733,8 @@ const BookingScreen = ({route, navigation}) => {
 
   return (
     <>
+      <ScrollView>
+
       {isLoading ? (
         <View>
           <ActivityIndicator
@@ -811,7 +813,7 @@ const BookingScreen = ({route, navigation}) => {
             }}>
             <View
               style={{
-                width: '20%',
+                width: '100%',
                 height: 20,
                 marginBottom: 10,
               }}>
@@ -932,12 +934,10 @@ const BookingScreen = ({route, navigation}) => {
                 />
               </View>
             </View>
-
             <View style={{}}>
-              {currentStylist ? (
+              {selectedBranch ? (
                 <>
                   {/* <View style={{ marginTop: '5%' }}>{mainExample()}</View> */}
-
                   <View
                     style={{
                       marginTop: 16,
@@ -1004,7 +1004,7 @@ const BookingScreen = ({route, navigation}) => {
                           mode="date"
                           open={open}
                           minimumDate={moment(new Date())
-                            .add(2, 'days')
+                            
                             .toDate()}
                           maximumDate={moment(new Date())
                             .add(30, 'days')
@@ -1101,7 +1101,7 @@ const BookingScreen = ({route, navigation}) => {
                       </View>
                     </View>
                   </View>
-
+                          
                   {userId ? (
                     <TouchableOpacity
                       style={{
@@ -1160,43 +1160,18 @@ const BookingScreen = ({route, navigation}) => {
                   )}
                 </>
               ) : (
-                <></>
-              )}
-              {/* <TouchableOpacity style={!isProductInfoOpen ? { marginHorizontal: '5%' } : { height: '60%', marginHorizontal: '5%' }}
-              onPress={() => {
-                setIsProductInfoOpen(!isProductInfoOpen);
-                if (!isProductInfoOpen) {
-                  dispatch(setSearchListTitle('Information'));
-                  navigation.setOptions({
-                    headerLeft: () =>
-                      <Icon style={{ fontSize: 35 }} name="chevron-back" onPress={() => {
-                        dispatch(setSearchListTitle(previousTitle));
-                        navigation.pop();
-                      }} />
-                  });
-                } else {
-                  dispatch(setSearchListTitle(previousTitle));
-                };
-              }}>
-              <Text style={styles.textStyle}>{i18n.t('date_avaliable')}</Text>
-
-              <Text style={styles.textStyle}>{avTime}</Text>
-
-              {!isProductInfoOpen ? (
-                <></>
-              ) : (
                 <>
-                  <Text style={{ marginTop: '3%' }}>{i18n.t('booking_consult')}</Text>
-                  <Text style={{ marginTop: '3%' }}>{i18n.t('search_place')}:</Text>
-                  <Text style={{ marginTop: '3%' }}>{i18n.t('booking_date')}</Text>
-
+                  <Text></Text>
                 </>
               )}
-            </TouchableOpacity> */}
+          
             </View>
           </View>
+          <View style={{height:100}}></View>
         </SafeAreaView>
       )}
+      </ScrollView>
+
     </>
   );
 };
@@ -1212,3 +1187,35 @@ const styles = StyleSheet.create({
 });
 
 export default BookingScreen;
+
+  {/* <TouchableOpacity style={!isProductInfoOpen ? { marginHorizontal: '5%' } : { height: '60%', marginHorizontal: '5%' }}
+            onPress={() => {
+              setIsProductInfoOpen(!isProductInfoOpen);
+              if (!isProductInfoOpen) {
+                dispatch(setSearchListTitle('Information'));
+                navigation.setOptions({
+                  headerLeft: () =>
+                    <Icon style={{ fontSize: 35 }} name="chevron-back" onPress={() => {
+                      dispatch(setSearchListTitle(previousTitle));
+                      navigation.pop();
+                    }} />
+                });
+              } else {
+                dispatch(setSearchListTitle(previousTitle));
+              };
+            }}>
+            <Text style={styles.textStyle}>{i18n.t('date_avaliable')}</Text>
+
+            <Text style={styles.textStyle}>{avTime}</Text>
+
+            {!isProductInfoOpen ? (
+              <></>
+            ) : (
+              <>
+                <Text style={{ marginTop: '3%' }}>{i18n.t('booking_consult')}</Text>
+                <Text style={{ marginTop: '3%' }}>{i18n.t('search_place')}:</Text>
+                <Text style={{ marginTop: '3%' }}>{i18n.t('booking_date')}</Text>
+
+              </>
+            )}
+          </TouchableOpacity> */}

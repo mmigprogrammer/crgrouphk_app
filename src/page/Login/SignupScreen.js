@@ -270,12 +270,12 @@ const Signup = ({navigation}) => {
       );
   };
   const signup = async () => {
+    
     try {
       const getMemberInfo = await cgaxios.post('common/MemberInfo', {
         AccessCode: 'ColorGroup',
         Phone: phone,
       });
-
       console.log(getMemberInfo.data);
       var temp = 0;
       if (getMemberInfo.data.data.length !== 0) {
@@ -316,6 +316,7 @@ const Signup = ({navigation}) => {
         console.log('Member Info not found');
         const res = await axios.post('account/registerAdd', {
           email,
+          name,
           tel: phone,
           password,
           udid: getUniqueId(),
@@ -808,11 +809,19 @@ const Signup = ({navigation}) => {
             {i18n.t('login_whencreateagree')}
             {'\n'}
           </Text>
-          <Text style={{fontWeight: 'bold', color: 'black', opacity: 1}}>
+          <Text
+            style={{fontWeight: 'bold', color: 'black', opacity: 1}}
+            onPress={() => {
+              navigation.push('TermsAndCondition');
+            }}>
             {i18n.t('login_tandc')}
           </Text>
           <Text style={{opacity: 0.5}}>{i18n.t('login_and')}</Text>
-          <Text style={{fontWeight: 'bold', color: 'black'}}>
+          <Text
+            style={{fontWeight: 'bold', color: 'black'}}
+            onPress={() => {
+              navigation.push('PrivacyPolicy');
+            }}>
             {i18n.t('login_pp')}
           </Text>
         </Text>

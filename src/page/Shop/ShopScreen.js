@@ -589,7 +589,7 @@ const Shop = ({route, navigation}) => {
                       justifyContent: 'flex-start',
                       flexDirection: 'row',
                       alignItems: 'center',
-                      width: '42%',
+                      width: '25%',
                     }}>
                     <Text style={{marginLeft: 10, fontSize: 16}}>
                       {i18n.t('shop_total')} :
@@ -599,11 +599,8 @@ const Shop = ({route, navigation}) => {
                       ${amountTotal}
                     </Text>
                   </View>
-                  {/* <TouchableOpacity
+                  <TouchableOpacity
                     style={{
-                      width: 101,
-                      height: 36,
-                      backgroundColor: '#E3A23B',
                       justifyContent: 'center',
                       alignItems: 'center',
                       marginHorizontal: 12,
@@ -615,13 +612,13 @@ const Shop = ({route, navigation}) => {
                         setModalVisible(true);
                       } else alert('你沒有優惠卷可用');
                     }}>
-                    <Text style={{color: 'white', fontSize: 15}}>
+                    <Text style={{color: '#000', fontSize: 15}}>
                       {i18n.t('shop_use_coupon')}
                     </Text>
-                  </TouchableOpacity> */}
+                  </TouchableOpacity>
                   <TouchableOpacity
                     style={{
-                      width: '25%',
+                      width: '18%',
                       height: 36,
                       backgroundColor: '#E3A23B',
                       justifyContent: 'center',
@@ -632,26 +629,51 @@ const Shop = ({route, navigation}) => {
                     }}
                     onPress={() => {
                       // setDateModalVisible(true);
+                      navigation.navigate('ShopCheckOut', {
+                        coupon: useCoupon,
+                        //date,
+                      });
+                    }}>
+                    <Text style={{color: 'white', fontSize: 13}}>
+                      {i18n.t('shop_checkout')}
+                    </Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                    style={{
+                      width: '18%',
+                      height: 36,
+                      marginLeft:5,
+                      backgroundColor: '#E3A23B',
+                      justifyContent: 'center',
+                      alignItems: 'center',
+
+                      marginVertical: 10,
+                      borderRadius: 50,
+                      display: 'none'
+                    }}
+                    onPress={() => {
+                      // setDateModalVisible(true);
 
                       navigation.navigate('UserScreen', {
                         screen: 'Order',
                       });
                       // navigation.navigate('Home');
                     }}>
-                    <Text style={{color: 'white', fontSize: 15}}>
+                    <Text style={{color: 'white', fontSize: 13}}>
                       {i18n.t('record')}
                     </Text>
                   </TouchableOpacity>
                   <TouchableOpacity
                     style={{
-                      width: '25%',
+                      width: '18%',
                       height: 36,
+                      marginLeft:5,
                       backgroundColor: '#E3A23B',
                       justifyContent: 'center',
                       alignItems: 'center',
                       marginVertical: 10,
                       borderRadius: 50,
-                      marginRight: 8,
+                      marginRight: 8
                     }}
                     onPress={() => {
                       // setDateModalVisible(true);
@@ -667,7 +689,7 @@ const Shop = ({route, navigation}) => {
                       });
                       // navigation.navigate('Home');
                     }}>
-                    <Text style={{color: 'white', fontSize: 15}}>
+                    <Text style={{color: 'white', fontSize: 13}}>
                       {i18n.t('booking')}
                     </Text>
                   </TouchableOpacity>

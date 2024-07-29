@@ -454,6 +454,7 @@ const Login = ({navigation, route}) => {
           <View
             style={{
               paddingHorizontal: 32,
+              alignItems: 'center'
             }}>
             {/* account */}
             <View
@@ -555,6 +556,7 @@ const Login = ({navigation, route}) => {
               style={{
                 height: '6.5%',
                 marginTop: 25,
+                display: 'none'
               }}>
               <CustButtom
                 style={{
@@ -735,14 +737,16 @@ const Login = ({navigation, route}) => {
               {'\n'}
               <Text
                 style={{fontWeight: 'bold', color: 'black'}}
-                onPress={() => OpenURL(uri + 'index.php/Home/index/tandc')}>
+                onPress={() => navigation.push('PrivacyPolicy')}>
                 {i18n.t('login_tandc')}
               </Text>
               &nbsp;{i18n.t('login_and')}&nbsp;
               <Text
                 style={{fontWeight: 'bold', color: 'black'}}
                 onPress={() => {
-                  OpenURL(uri + 'index.php/Home/index/privacy_policy');
+                  navigation.push('TermsAndCondition');
+                  console.log('clicked');
+                  // navigation.navigate('UserScreen', {screen: 'Login'});
                 }}>
                 {i18n.t('login_pp')}
               </Text>

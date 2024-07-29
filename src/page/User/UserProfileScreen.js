@@ -215,7 +215,7 @@ const User = ({navigation}) => {
                     opacity: 0.75,
                   }}>
                   {i18n.t('user_balance')} | HK$
-                  {userInfo ? userInfo.amountBalance : 0}
+                  {userInfo && userInfo.amountBalance  ? userInfo.amountBalance : 0}
                 </Text>
               </View>
             </View>
@@ -331,6 +331,47 @@ const User = ({navigation}) => {
             <Icon name="navigate-next" style={{fontSize: 16, color: 'grey'}} />
           </View>
         </TouchableHighlight>
+        {/* order */}
+        <TouchableHighlight
+          style={{
+            paddingHorizontal: 9,
+            paddingVertical: 9,
+            backgroundColor: '#ffffff',
+            height: 51,
+          }}
+          onPress={() => {
+            navigation.push('Record');
+          }}
+          onPressIn={() => {
+            setThtColor(thtColor => ({...thtColor, [1]: '#FFFFFF'}));
+            setThiColor(thiColor => ({...thiColor, [1]: '#FFFFFF'}));
+          }}
+          onPressOut={() => {
+            setThtColor(thtColor => ({...thtColor, [1]: '#707070'})),
+              setThiColor(thiColor => ({...thiColor, [1]: '#707070'}));
+          }}>
+          <View
+            style={{
+              flexDirection: 'row',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              paddingLeft: '3%',
+              paddingTop: 9,
+            }}>
+            <View style={{flexDirection: 'row'}}>
+              <Icon name="list-alt" style={{fontSize: 18, color: 'grey'}} />
+              <Text
+                style={{
+                  fontWeight: Platform.OS == 'ios' ? '300' : '700',
+                  fontSize: 16,
+                  color: thtColor[1],
+                }}>
+                &nbsp;&nbsp;&nbsp;{i18n.t('my_booking')}
+              </Text>
+            </View>
+            <Icon name="navigate-next" style={{fontSize: 16, color: 'grey'}} />
+          </View>
+        </TouchableHighlight>
         <View
           style={{
             borderBottomColor: '#E2E2E2',
@@ -391,7 +432,7 @@ const User = ({navigation}) => {
         />
         {/* coupon */}
         {/* cs */}
-        <TouchableHighlight
+        {/* <TouchableHighlight
           underlayColor="#707070"
           style={{
             paddingHorizontal: 9,
@@ -432,7 +473,7 @@ const User = ({navigation}) => {
             </View>
             <Icon name="navigate-next" style={{fontSize: 16, color: 'grey'}} />
           </View>
-        </TouchableHighlight>
+        </TouchableHighlight> */}
         <View
           style={{
             borderBottomColor: '#E2E2E2',

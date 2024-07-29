@@ -26,7 +26,9 @@ import FavoriteRLScreen from './Favorite/RequireLoginFav';
 import UserProfileScreen from './User/UserProfileScreen';
 import MyAccountScreen from './User/MyAccountScreen';
 import OrderScreen from './User/OrderScreen';
+import RecordScreen from './User/RecordScreen';
 import OrderDetailScreen from './User/OrderDetailScreen';
+import RecordDetailScreen from './User/RecordDetailScreen';
 import CouponScreen from './User/CouponScreen';
 import CustomerServiceScreen from './User/CustomerServiceScreen';
 import CouponHistoryScreen from './User/CouponHistoryScreen';
@@ -41,6 +43,9 @@ import * as i18n from '../i18n/i18n';
 import {View} from 'react-native';
 import {useSelector, useDispatch} from 'react-redux';
 import style from '../utils/style';
+import TermsAndConditionScreen from './User/TermsAndConditionScreen';
+import PrivacyScreen from './User/PrivacyPolicyScreen';
+import PrivacyPolicyScreen from './User/PrivacyPolicyScreen';
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -354,7 +359,27 @@ const UserScreenStack = ({navigation}) => {
             options={{
               headerTitle: () => (
                 <Text style={{fontSize: 16, color: '#6A6A6A'}}>
-                  {i18n.t('record')}
+                  {i18n.t('my_order')}
+                </Text>
+              ),
+              headerLeft: () => (
+                <Icon
+                  style={{fontSize: 35}}
+                  name="chevron-back"
+                  onPress={() => {
+                    navigation.reset({routes: [{name: 'UserScreen'}]});
+                  }}
+                />
+              ),
+            }}
+          />
+          <Stack.Screen
+            name="Record"
+            component={RecordScreen}
+            options={{
+              headerTitle: () => (
+                <Text style={{fontSize: 16, color: '#6A6A6A'}}>
+                  {i18n.t('my_booking')}
                 </Text>
               ),
               headerLeft: () => (
@@ -371,6 +396,26 @@ const UserScreenStack = ({navigation}) => {
           <Stack.Screen
             name="OrderDetail"
             component={OrderDetailScreen}
+            options={{
+              headerTitle: () => (
+                <Text style={{fontSize: 16, color: '#6A6A6A'}}>
+                  {i18n.t('my_order')}
+                </Text>
+              ),
+              headerLeft: () => (
+                <Icon
+                  style={{fontSize: 35}}
+                  name="chevron-back"
+                  onPress={() =>
+                    navigation.navigate('UserScreen', {screen: 'Order'})
+                  }
+                />
+              ),
+            }}
+          />
+          <Stack.Screen
+            name="RecordDetail"
+            component={RecordDetailScreen}
             options={{
               headerTitle: () => (
                 <Text style={{fontSize: 16, color: '#6A6A6A'}}>
@@ -406,7 +451,8 @@ const UserScreenStack = ({navigation}) => {
               ),
             }}
           />
-          <Stack.Screen
+
+          {/* <Stack.Screen
             name="CustomerService"
             component={CustomerServiceScreen}
             options={{
@@ -419,7 +465,9 @@ const UserScreenStack = ({navigation}) => {
                 />
               ),
             }}
-          />
+          /> */}
+          
+
           <Stack.Screen
             name="CouponHistory"
             component={CouponHistoryScreen}
@@ -454,6 +502,42 @@ const UserScreenStack = ({navigation}) => {
           />
         </>
       )}
+       <Stack.Screen
+            name="TermsAndCondition"
+            component={TermsAndConditionScreen}
+            options={{
+              headerTitle: () => (
+                <Text style={{fontSize: 16, color: '#6A6A6A'}}>
+                  {i18n.t('setting_tandc')}
+                </Text>
+              ),
+              headerLeft: () => (
+                <Icon
+                  style={{fontSize: 35}}
+                  name="chevron-back"
+                  onPress={() => navigation.pop()}
+                />
+              ),
+            }}
+          />
+          <Stack.Screen
+            name="PrivacyPolicy"
+            component={PrivacyPolicyScreen}
+            options={{
+              headerTitle: () => (
+                <Text style={{fontSize: 16, color: '#6A6A6A'}}>
+                  {i18n.t('login_pp')}
+                </Text>
+              ),
+              headerLeft: () => (
+                <Icon
+                  style={{fontSize: 35}}
+                  name="chevron-back"
+                  onPress={() => navigation.pop()}
+                />
+              ),
+            }}
+          />
     </Stack.Navigator>
   );
 };

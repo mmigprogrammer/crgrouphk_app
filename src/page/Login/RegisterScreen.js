@@ -37,7 +37,7 @@ const Register = ({route, navigation}) => {
   const [email, setEmail] = useState(route.params.email);
   const [platform, setPlatform] = useState(route.params.platform);
 
-  const [password, setPassword] = useState('');
+  const [password, setPassword] = useState(route.params.platform == 'apple' ? '12345678' : '');
   const [name, setName] = useState(route.params.name);
   const [tel, setTel] = useState('');
 
@@ -73,6 +73,8 @@ const Register = ({route, navigation}) => {
     }
     return null;
   };
+
+  
 
   const signup = async () => {
     console.log(route.params);
@@ -262,6 +264,7 @@ const Register = ({route, navigation}) => {
                 marginTop: '3%',
                 borderColor: 'gray',
                 borderWidth: 1,
+                display: platform == 'apple' ? 'none' : 'flex'
               }}>
               <TextInput
                 style={{

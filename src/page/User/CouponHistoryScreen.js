@@ -27,7 +27,7 @@ const CouponHistoryScreen = ({route, navigation}) => {
   const {userId} = useSelector(state => state.loginReducer);
   const {userMemberId} = useSelector(state => state.loginReducer);
 
-  console.log(userMemberId);
+  //console.log(userMemberId);
   async function fetchMyAPI() {
     try {
       const allyhcard = await axios
@@ -37,21 +37,21 @@ const CouponHistoryScreen = ({route, navigation}) => {
           },
         })
         .then(yhcards => {
-          console.log(yhcards.data);
           for (let i = 0; i < yhcards.data.data.length; i++) {
             if (new Date() > new Date(yhcards.data.data[i].endDate)) {
               yhcards.data.data[i].status = 0;
-              console.log(new Date());
-              console.log(new Date(yhcards.data.data[i].endDate));
+              //console.log(new Date());
+              //console.log(new Date(yhcards.data.data[i].endDate));
             } else {
               yhcards.data.data[i].status = 1;
               console.log(new Date() > new Date(yhcards.data.data[i].endDate));
             }
           }
-          console.log(yhcards.data.data);
+          //console.log(yhcards.data.data);
           return yhcards.data.data;
         });
-      console.log(allyhcard);
+      //console.log(allyhcard);
+      //console.log('test2222222', allyhcard);
       setYhcard(allyhcard);
 
       const useryhcard = await axios
@@ -61,43 +61,46 @@ const CouponHistoryScreen = ({route, navigation}) => {
           },
         })
         .then(useryhcard => {
-          console.log(useryhcard.data.data);
-          for (let i = 0; i < useryhcard.data.data.length; i++) {
-            if (new Date() > new Date(useryhcard.data.data[i].endDate)) {
-              useryhcard.data.data[i].status = 0;
-            } else {
-              useryhcard.data.data[i].status = 1;
-            }
-          }
-          console.log(useryhcard.data.data);
-          setCoupon(useryhcard.data.data);
-          var temp = [];
-          console.log(useryhcard.data.data);
-          console.log(allyhcard);
-
-          allyhcard.map(obj => {
+          if(useryhcard.data.data){
             for (let i = 0; i < useryhcard.data.data.length; i++) {
-              if (obj.id && useryhcard.data.data[i].yhId) {
-                if (obj.id == useryhcard.data.data[i].yhId) {
-                  temp.push({
-                    usableTime: useryhcard.data.data[i].usableTime,
-                    ...obj,
-                  });
-                }
+              if (new Date() > new Date(useryhcard.data.data[i].endDate)) {
+                useryhcard.data.data[i].status = 0;
+              } else {
+                useryhcard.data.data[i].status = 1;
               }
             }
-          });
-
-          setCoupon(temp);
-          console.log(temp);
-          return useryhcard.data.data;
+            //console.log(useryhcard.data.data);
+            setCoupon(useryhcard.data.data);
+            var temp = [];
+            //console.log(useryhcard.data.data);
+            //console.log(allyhcard);
+  
+            allyhcard.map(obj => {
+              for (let i = 0; i < useryhcard.data.data.length; i++) {
+                if (obj.id && useryhcard.data.data[i].yhId) {
+                  if (obj.id == useryhcard.data.data[i].yhId) {
+                    temp.push({
+                      usableTime: useryhcard.data.data[i].usableTime,
+                      ...obj, 
+                    });
+                  }
+                }
+              }
+            });
+            setCoupon(temp);
+            //console.log(temp);
+            return useryhcard.data.data;
+          }else{
+            return [];
+          }
+          
         });
 
       // setYhcard(allyhcard);
 
       // console.log('22222');
     } catch (e) {
-      console.log(e);
+      console.log('error', e);
     }
   }
 
@@ -116,17 +119,17 @@ const CouponHistoryScreen = ({route, navigation}) => {
   console.log(userId);
 
   const addCoupon = async item => {
-    console.log(item);
+    //console.log(item);
     await cgaxios
       .post('Common/DeductionPoints', {
         AccessCode: 'ColorGroup',
         MemberId: userMemberId ? userMemberId : 0,
-        Points: item.redeemScore,
+        Points: item.score,
 
         //MemberId: ,
       })
       .then(data => {
-        console.log(data);
+        //console.log(data);
       });
     await axios
       .get('user/addCard', {
@@ -136,10 +139,12 @@ const CouponHistoryScreen = ({route, navigation}) => {
         },
       })
       .then(data1 => {
-        console.log(data1);
-
         if (data1.data.code == 4) {
           alert(i18n.t('already_redeemed'));
+        }else if(data1.data.code != 0){
+          alert(data1.data.msg);
+        }else{
+          alert(data1.data.msg);
         }
         fetchMyAPI();
       });
@@ -391,7 +396,7 @@ const CouponHistoryScreen = ({route, navigation}) => {
 
                           right: 15,
                         }}>
-                        {i18n.t('get_date')} : {item.addDate.split(' ')[0]}{' '}
+                        {i18n.t('get_date')} : {item.addDate ? item.addDate.split(' ')[0] : ''}{' '}
                       </Text>
                     </View>
                   </View>
@@ -494,7 +499,7 @@ const CouponHistoryScreen = ({route, navigation}) => {
 
                           right: 15,
                         }}>
-                        {i18n.t('get_date')} : {item.addDate.split(' ')[0]}{' '}
+                        {i18n.t('get_date')} : {item.addDate ? item.addDate.split(' ')[0] : ''}{' '}
                       </Text>
                     </View>
                   </View>
